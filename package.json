@@ -1,0 +1,42 @@
+{
+  "name": "playwright-auth-screenshot",
+  "version": "1.0.0",
+  "description": "Take authenticated screenshots of any web app — Supabase, Clerk, Salesforce, or custom login forms",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "playwright-auth-screenshot": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "playwright",
+    "screenshot",
+    "authentication",
+    "headless",
+    "browser",
+    "supabase",
+    "clerk",
+    "salesforce",
+    "testing",
+    "visual-testing"
+  ],
+  "author": "jp-customercity",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jp-customercity/playwright-auth-screenshot.git"
+  },
+  "dependencies": {
+    "playwright": "^1.58.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
